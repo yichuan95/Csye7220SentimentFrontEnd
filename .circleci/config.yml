@@ -20,9 +20,13 @@ jobs:
       - checkout
       
       # run tests!
+      - run: yarn install
+      
       - run: npm install
       
       - run: cd sa-frontend
+      
+      - run: chmod 777 ./sa-frontend/package.json
       
       - run: npm start --prefix ./sa-frontend
       
