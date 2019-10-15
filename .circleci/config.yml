@@ -22,7 +22,7 @@ jobs:
       # run tests!
       - run: yarn install
       
-      - run: npm install
+      - run: npm install react-scripts --save
       
       - run: cd sa-frontend
       
