@@ -18,10 +18,6 @@ jobs:
 
     steps:
       - checkout
-
-      - run:
-            name: navigate to working folder
-            command: cd sa-frontend     
       - run:
             name: start application
             command: npm start
