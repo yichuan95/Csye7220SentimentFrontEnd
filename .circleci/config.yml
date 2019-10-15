@@ -22,11 +22,13 @@ jobs:
       # run tests!
       - run: yarn install
       
-      - run: npm install react-scripts --save
+      - run: npm install
       
       - run: cd sa-frontend
       
       - run: chmod 777 ./sa-frontend/package.json
+      
+      - run: chmod a+x ./sa-frontend/node_modules/.bin/react-scripts
       
       - run: npm start --prefix ./sa-frontend
       
