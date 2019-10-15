@@ -14,11 +14,14 @@ jobs:
       # documented at https://circleci.com/docs/2.0/circleci-images/
       # - image: circleci/mongo:3.4.4
 
-    working_directory: ~/repo/sa-frontend
+    working_directory: ~/repo
 
     steps:
       - checkout
 
+      - run:
+            name: navigate to working folder
+            command: cd sa-frontend     
       - run:
             name: start application
             command: npm start
