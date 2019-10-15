@@ -20,6 +20,8 @@ jobs:
       - checkout
       
       # run tests!
+      - run: npm install
+      
       - run: cd sa-frontend
       
       - run: npm start --prefix ./sa-frontend
